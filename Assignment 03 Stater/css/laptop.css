@@ -1,0 +1,9 @@
+@media screen and (min-width: 1024px) {
+  #nav-bar .container {
+    display: grid;
+     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+}
+.mid-section > div > * {
+  display: inline-block
+}
+}

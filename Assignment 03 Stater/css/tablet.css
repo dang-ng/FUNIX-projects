@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px)
+and (max-width: 1023px) {
+  #nav-bar .container {
+    display: grid;
+     grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+}
+#job-info .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-wrap: wrap; */
+    /* gap:0; */
+    /* align-content: center; */
+    /* justify-content: center; */
+}
+#job-info .container > div{
+    /* width:50%; */
+}
+.mid-section >div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+}

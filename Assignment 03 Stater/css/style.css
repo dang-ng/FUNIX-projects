@@ -1,0 +1,321 @@
+/* CSS CHUNG **************************************/
+* {
+    font-family: 'open sans light';
+    box-sizing: border-box;
+}
+.bg-grey {
+    background: #f7f7f7;
+}
+body > section {
+    margin: auto;
+    padding: 30px 0;
+}
+.section-title {
+    font-size: xx-large;
+}
+section > .container{
+    /* width: 1170px; */
+    /* margin: auto; */
+    /* padding: 30px 50px; */
+}
+.blue-wrap {
+    color: white;
+    background-color: #199cdb;
+    border-radius: 25%;
+    padding: 2px 10px;
+}
+.blue-icon {
+    color: #199cdb;
+}
+
+/* BANNER SECTION *****************************/
+#banner {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url('../images/banner.jpg');
+    position: relative;
+    height: 60vh;
+    width: 100%;
+}
+
+#banner > * {
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#banner > h1 {
+    font-size: 50px;
+    margin-top: 100px;
+}
+#banner > span {
+    margin-top: 180px;
+}
+
+/* NAVIGATION SECTION ***************************/
+#nav-bar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#nav-bar .container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    padding: 0;
+    margin: auto;
+    height: 5rem;
+}
+#nav-bar .container > div {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+#nav-bar .container > div {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#nav-bar .container > div > * {
+    margin: 0;
+}
+#nav-bar h1 {
+    font-size: 2rem;
+}
+
+/* ABOUT SECTION **************************/
+#about {
+       padding-top: 0;
+}
+#about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 50vh;
+    line-height: 2rem;
+}
+#about .container > * {
+    padding: 10vh 5vw;
+}
+#about h1 {
+    font-size: 2rem;
+}
+#about ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+#about span {
+    font-weight: bold;
+}
+#about i {
+    color: #199cdb;
+}
+#personal-info {
+    background: #ECECEC;
+}
+
+/* JOB INFO SECTION *****************/
+#job-info .container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 50px;
+    margin: auto;
+}
+#job-info .container div {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+#job-info > div > div > i {
+    font-size: xx-large;
+}
+#job-info .container > div > *:first-child {
+    grid-area: 1/1/2/2;
+    display: grid;
+    margin: 40px;
+}
+#job-info .container > div > *:nth-child(2) {
+    grid-area: 1/2/2/3;
+    margin: 40px;
+}
+#job-info .container > div > *:nth-child(3) {
+    grid-area: 2/1/3/3;
+    list-style: none;
+    font-size: 15px;
+    border: none;
+    padding: 40px;
+}
+#job-info .container > div > ul > li::before {
+    content: '';
+    border-radius: 50%;
+    background-color: red;
+    width: 5px;
+    height: 5px;
+}
+#job-info .container .level-blue {
+    background-color: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+#job-info .container .level-gray {
+    background-color: lightgray;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+#job-info .container > div:last-child > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 4rem);
+    width: 100%;
+    justify-content: space-around;
+}
+#job-info h4 {
+    position: relative;
+}
+#job-info h4::before {
+    content: '';
+    background-color: #199cdb;
+    width: 6px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 8px;
+    border-radius: 50%;
+}
+.ic-megaphone, .ic-strategy, .ic-hotairballoon, .ic-basket {
+    font-size: 25px;
+} 
+.ic-megaphone::before, .ic-strategy::before, .ic-hotairballoon::before,.ic-basket::before {
+    border: 2px solid #199cdb;
+    border-radius: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+/* CERTIFICATE SECTION ******************/
+#certificate {
+    min-height: 60vh;
+}
+#certificate > h1 {
+    height: 20%;
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+#certificate .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+    margin: auto;
+    width: 80%;
+}
+#certificate .container > div > img {
+    width: 80%;
+    grid-area: 1/1/2/2;
+    padding: 50px 0;
+}
+#certificate li {
+    list-style-type: '- ';
+}
+#certificate h5 {
+    padding-left: 0;
+    font-size: large;
+}
+#certificate ul {
+    padding-left: 10px;
+}
+#certificate .container > div {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    position: relative;
+    align-items: center;
+}
+#certificate .container > div:not(:last-child) {
+    border-bottom: 1px solid #d6c08d;
+}
+#certificate .container > div:nth-child(2)::before {
+    content: '';
+    background-color: #d6c08d;
+    height: 60%;
+    width: 1px;
+    position: absolute;
+    transform: translateX(-10px);
+}
+
+/* PROJECT SECTION *********************/
+#project {
+    width: 80%;
+}
+#project .container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    gap: 20px;
+    font-size: 13px;
+}
+#project .container > div {
+    display: grid;
+    grid-template-rows: auto auto 3rem auto;
+    align-items: stretch;
+}
+#project table, #project tr {
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+}
+#project td {
+    padding: 10px;
+}
+#project .container > div > * {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#project .container > div > img {
+    width: 100%;
+}
+#project .container h1 {
+    text-transform: uppercase;
+    padding: 10px;
+}
+.p-5 {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   align-items: center;
+   justify-content: flex-start;
+}
+.p-5 > * {
+    margin: 8px;
+}
+
+/* FOOTER SECTION ********************/
+#footer .container {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#footer .container > * {
+    color: #199cdb;
+    font-size: 25px;
+    cursor: pointer;
+}

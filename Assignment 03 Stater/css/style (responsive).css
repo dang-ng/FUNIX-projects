@@ -127,6 +127,7 @@ section > .container {
   grid-template-rows: auto auto;
   gap: 20px;
   margin: auto;
+  height: 100%;
 }
 #job-info .container div {
   display: grid;
@@ -143,7 +144,7 @@ section > .container {
 #job-info .container > div > *:first-child {
   grid-area: 1/1/2/2;
   display: grid;
-  margin: 40px;
+  margin: 40px 20px 20px 20px;
 }
 #job-info .container > div > *:nth-child(2) {
   grid-area: 1/2/2/3;

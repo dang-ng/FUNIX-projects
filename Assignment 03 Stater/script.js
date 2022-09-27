@@ -2,7 +2,9 @@ const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\
 
 const info = document.querySelector('.info');
 const form = document.querySelector('.form-info');
-
+const viewmore = document.querySelectorAll('.viewmore');
+const ijob = document.querySelectorAll('.i-job');
+const divjob = document.querySelectorAll('.div-job');
 
 document.querySelector('.submit').addEventListener('click', function () {
     let email = document.querySelector('#inputEmail').value;
@@ -11,5 +13,25 @@ document.querySelector('.submit').addEventListener('click', function () {
         form.classList.add('d-none');
     }
 })
+
+for (let i = 0; i < divjob.length; i++){
+    divjob[i].addEventListener('mouseover', function () {
+        viewmore[i].classList.remove('d-none');
+    })
+}
+for (let i = 0; i < divjob.length; i++) {
+    divjob[i].addEventListener('mouseout', function () {
+        viewmore[i].classList.add('d-none');
+    })
+}
+
+
+for (let i = 0; i < viewmore.length;i++){
+viewmore[i].addEventListener('click', function () {
+    ijob[i].classList.toggle('d-none');
+    viewmore[i].innerHTML == '<i class="bi bi-caret-down-fill"></i>  VIEW MORE' ? viewmore[i].innerHTML = '<i class="bi bi-caret-down-fill"></i>  VIEW LESS' : viewmore[i].innerHTML = '<i class="bi bi-caret-down-fill"></i>  VIEW MORE';
+
+})
+}
 
 

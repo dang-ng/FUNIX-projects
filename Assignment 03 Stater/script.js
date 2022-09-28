@@ -5,13 +5,15 @@ const form = document.querySelector('.form-info');
 const viewmore = document.querySelectorAll('.viewmore');
 const ijob = document.querySelectorAll('.i-job');
 const divjob = document.querySelectorAll('.div-job');
+const invalid = document.querySelector('.invalid');
 
 document.querySelector('.submit').addEventListener('click', function () {
     let email = document.querySelector('#inputEmail').value;
     if (regex.test(email)) {
         info.classList.remove('d-none');
         form.classList.add('d-none');
-    }
+        invalid.classList.add('d-none');
+    } else invalid.classList.remove('d-none');
 })
 
 for (let i = 0; i < divjob.length; i++){

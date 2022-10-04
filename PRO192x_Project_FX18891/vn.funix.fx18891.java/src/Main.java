@@ -1,7 +1,6 @@
-import java.math.BigInteger;
 import java.util.Scanner;
 
-public class Asm01 {
+public class Main {
     public static void main(String[] args) {
         System.out.println("+----------+-------------------------+----------+");
         System.out.println("| NGAN HANG SO | FX18891@v1.0.0                 |");
@@ -11,18 +10,25 @@ public class Asm01 {
         System.out.println("+----------+-------------------------+----------+");
         Scanner scn = new Scanner(System.in);
 
-//      Kiểm tra user nhập số đúng định dạng không
-        int choose = -1;
-        int choose2 = -1;
+//        Kiểm tra user nhập số đúng định dạng không
+        int choose  = -1;
         do {
             System.out.print("Chuc nang: ");
             choose = inputNumber(scn);
-            if (choose != 0 && choose != 1){
-                System.out.println("Vui long chi nhap 0 hoac 1.");
+//            while (!scn.hasNextInt()){
+//                scn.nextLine();
+//                System.out.println("Vui long nhap so");
+//                System.out.print("Chuc nang: ");
+//            }
+//            return scn.nextInt();
+            if (choose != 0 && choose != 1) {
+                System.out.println("Vui long nhap 0 hoac 1");
             }
         } while (choose != 0 && choose != 1);
 
-//      Nếu nhập 0 hoặc 1
+        System.out.println("Da nhap: " + choose);
+
+//        Kiểm tra user nhập 1 hay 0
         if (choose == 0) System.exit(0);
         if (choose == 1) {
             int rnd = (int)(Math.random()*900)+100; // ra số ngẫu nhiên từ 100-999
@@ -35,8 +41,7 @@ public class Asm01 {
 
             // Nhập số CCCD
             System.out.print("Vui long nhap so CCCD: ");
-            BigInteger cccd = scn.nextBigInteger();
-
+            int cccd = inputNumber(scn);
             String[] cities = {"","Hà Nội","Hà Giang","","Cao Bằng","","Bắc Kạn","","Tuyên Quang","","Lào Cai","Điện Biên","Lai Châu","","Sơn La","Yên Bái","","Hòa Bình","","Thái Nguyên","Lạng Sơn","","Quảng Ninh","","Bắc Giang","Phú Thọ","Vĩnh Phúc","Bắc Ninh","","","Hải Dương","Hải Phòng","","Hưng Yên","Thái Bình","Hà Nam","Nam Định","Ninh Bình","Thanh Hóa","","Nghệ An","","Hà Tĩnh","","Quảng Bình","Quảng Trị","Thừa Thiên Huế","","Đà Nẵng","Quảng Nam","","Quảng Ngãi","Bình Định","","Phú Yên","","Khánh Hòa","","Ninh Thuận","","Bình Thuận","","Kon Tum","","Gia Lai","","Đắk Lắk","Đắk Nông","Lâm Đồng","","Bình Phước","","Tây Ninh","","Bình Dương","Đồng Nai","","Bà Rịa - Vũng Tàu","","Hồ Chí Minh","Long An","","Tiền Giang","Bến Tre","Trà Vinh","","Vĩnh Long","Đồng Tháp","","An Giang","","Kiên Giang","Cần Thơ","Hậu Giang","Sóc Trăng","Bạc Liêu","Cà Mau"};
 
             do {
@@ -45,27 +50,22 @@ public class Asm01 {
                 System.out.println("    | 3. Kiem tra so ngau nhien");
                 System.out.println("    | 0. Thoat");
                 System.out.print("Chuc nang: ");
-                choose2 = inputNumber(scn);
-                if (choose2 != 1 && choose2 != 2 && choose2 != 3 && choose2 != 0){
-                    System.out.println("Vui long nhap theo lua chon ben tren.");
-                }
-            } while (choose2 != 1 && choose2 != 2 && choose2 != 3 && choose2 != 0);
 
-            if (choose2 == 1){
-                int firstpart = cccd.divide(BigInteger.valueOf(1000000000)).intValue();
-                System.out.println("Noi sinh: " + cities[firstpart]);
-            }
-
+            } while (true);
 
         }
 
 
+
+
+
         scn.close();
     }
-    static int inputNumber(Scanner scn){
+
+    static int inputNumber(Scanner scn) {
         while (!scn.hasNextInt()){
             scn.nextLine();
-            System.out.println("Vui long chi nhap 0 hoac 1.");
+            System.out.println("Vui long nhap so");
             System.out.print("Chuc nang: ");
         }
         return scn.nextInt();

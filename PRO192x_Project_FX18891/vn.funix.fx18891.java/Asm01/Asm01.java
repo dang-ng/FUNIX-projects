@@ -35,10 +35,14 @@ public class Asm01 {
 
             // Nhập số CCCD
             System.out.print("Vui long nhap so CCCD: ");
-            BigInteger cccd = scn.nextBigInteger();
+            String cccd = scn.next();
+            while(!isValid(cccd)){
+                System.out.println("Vui long nhap so CCCD dung dinh dang 12 so.");
+                cccd = scn.next();
+            }
 
             String[] cities = {"","Hà Nội","Hà Giang","","Cao Bằng","","Bắc Kạn","","Tuyên Quang","","Lào Cai","Điện Biên","Lai Châu","","Sơn La","Yên Bái","","Hòa Bình","","Thái Nguyên","Lạng Sơn","","Quảng Ninh","","Bắc Giang","Phú Thọ","Vĩnh Phúc","Bắc Ninh","","","Hải Dương","Hải Phòng","","Hưng Yên","Thái Bình","Hà Nam","Nam Định","Ninh Bình","Thanh Hóa","","Nghệ An","","Hà Tĩnh","","Quảng Bình","Quảng Trị","Thừa Thiên Huế","","Đà Nẵng","Quảng Nam","","Quảng Ngãi","Bình Định","","Phú Yên","","Khánh Hòa","","Ninh Thuận","","Bình Thuận","","Kon Tum","","Gia Lai","","Đắk Lắk","Đắk Nông","Lâm Đồng","","Bình Phước","","Tây Ninh","","Bình Dương","Đồng Nai","","Bà Rịa - Vũng Tàu","","Hồ Chí Minh","Long An","","Tiền Giang","Bến Tre","Trà Vinh","","Vĩnh Long","Đồng Tháp","","An Giang","","Kiên Giang","Cần Thơ","Hậu Giang","Sóc Trăng","Bạc Liêu","Cà Mau"};
-
+            BigInteger cccd2 = new BigInteger(cccd);
             do {
                 System.out.println("    | 1. Kiem tra noi sinh");
                 System.out.println("    | 2. Kiem tra tuoi, gioi tinh");
@@ -52,16 +56,16 @@ public class Asm01 {
 
 //            Kiem tra noi sinh
             if (choose2 == 1){
-                int firstpart = cccd.divide(BigInteger.valueOf(1000000000)).intValue();
+                int firstpart = cccd2.divide(BigInteger.valueOf(1000000000)).intValue();
                 System.out.println("Noi sinh: " + cities[firstpart]);
             }
 
 //            Kiem tra tuoi, gioi tinh
             if (choose2 == 2){
-                int secondpart = cccd.divide(BigInteger.valueOf(100000000)).remainder(BigInteger.valueOf(10)).intValue();
+                int secondpart = cccd2.divide(BigInteger.valueOf(100000000)).remainder(BigInteger.valueOf(10)).intValue();
                 int fullbirthyear = 0;
                 String gender = "";
-                int birthyear = cccd.divide(BigInteger.valueOf(1000000)).remainder(BigInteger.valueOf(100)).intValue();
+                int birthyear = cccd2.divide(BigInteger.valueOf(1000000)).remainder(BigInteger.valueOf(100)).intValue();
                 switch (secondpart) {
                     case 0 -> {
                         gender = "Nam";
@@ -111,7 +115,7 @@ public class Asm01 {
                 System.out.println("Gioi tinh: " + gender + " | " + fullbirthyear);
             }
             if (choose2 == 3){
-                int thirdpart = cccd.remainder(BigInteger.valueOf(100000)).intValue();
+                int thirdpart = cccd2.remainder(BigInteger.valueOf(1000000)).intValue();
                 System.out.printf("So ngau nhien: %06d\n", thirdpart);
             }
             } while (choose2 != 0);
@@ -125,5 +129,14 @@ public class Asm01 {
             System.out.print("Chuc nang: ");
         }
         return scn.nextInt();
+    }
+    public static boolean isValid(String cccd){
+        if (cccd.length() != 12) return false;
+        try {
+            BigInteger i = new BigInteger(cccd);
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
     }
 }

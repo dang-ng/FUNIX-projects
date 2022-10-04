@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="2nd commit">
+    <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="CCCD format setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asm01/Asm01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm01/Asm01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
       <workItem from="1664782176389" duration="8352000" />
       <workItem from="1664799771794" duration="3206000" />
       <workItem from="1664841707218" duration="3745000" />
-      <workItem from="1664853436059" duration="2557000" />
+      <workItem from="1664853436059" duration="5697000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1664721336345</created>
@@ -121,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664845461443</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CCCD format setup">
+      <created>1664856193810</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664856193810</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
     <MESSAGE value="2nd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
+    <MESSAGE value="CCCD format setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="CCCD format setup" />
   </component>
 </project>

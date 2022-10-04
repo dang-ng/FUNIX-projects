@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="2nd commit">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asm01/Asm01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm01/Asm01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,8 @@
       <workItem from="1664764722403" duration="752000" />
       <workItem from="1664782176389" duration="8352000" />
       <workItem from="1664799771794" duration="3206000" />
-      <workItem from="1664841707218" duration="3611000" />
+      <workItem from="1664841707218" duration="3745000" />
+      <workItem from="1664853436059" duration="2557000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1664721336345</created>
@@ -115,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664759928950</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2nd commit">
+      <created>1664845461443</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664845461443</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

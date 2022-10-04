@@ -46,20 +46,76 @@ public class Asm01 {
                 System.out.println("    | 0. Thoat");
                 System.out.print("Chuc nang: ");
                 choose2 = inputNumber(scn);
-                if (choose2 != 1 && choose2 != 2 && choose2 != 3 && choose2 != 0){
-                    System.out.println("Vui long nhap theo lua chon ben tren.");
-                }
-            } while (choose2 != 1 && choose2 != 2 && choose2 != 3 && choose2 != 0);
+            if (choose2 != 1 && choose2 != 2 && choose2 != 3 && choose2 != 0){
+                System.out.println("Vui long nhap theo lua chon ben tren.");
+            }
 
+//            Kiem tra noi sinh
             if (choose2 == 1){
                 int firstpart = cccd.divide(BigInteger.valueOf(1000000000)).intValue();
                 System.out.println("Noi sinh: " + cities[firstpart]);
             }
 
-
+//            Kiem tra tuoi, gioi tinh
+            if (choose2 == 2){
+                int secondpart = cccd.divide(BigInteger.valueOf(100000000)).remainder(BigInteger.valueOf(10)).intValue();
+                int fullbirthyear = 0;
+                String gender = "";
+                int birthyear = cccd.divide(BigInteger.valueOf(1000000)).remainder(BigInteger.valueOf(100)).intValue();
+                switch (secondpart) {
+                    case 0 -> {
+                        gender = "Nam";
+                        fullbirthyear = 1900 + birthyear;
+                    }
+                    case 1 -> {
+                        gender = "Nu";
+                        fullbirthyear = 1900 + birthyear;
+                    }
+                    case 2 -> {
+                        gender = "Nam";
+                        fullbirthyear = 2000 + birthyear;
+                    }
+                    case 3 -> {
+                        gender = "Nu";
+                        fullbirthyear = 2000 + birthyear;
+                    }
+                    case 4 -> {
+                        gender = "Nam";
+                        fullbirthyear = 2100 + birthyear;
+                    }
+                    case 5 -> {
+                        gender = "Nu";
+                        fullbirthyear = 2100 + birthyear;
+                    }
+                    case 6 -> {
+                        gender = "Nam";
+                        fullbirthyear = 2200 + birthyear;
+                    }
+                    case 7 -> {
+                        gender = "Nu";
+                        fullbirthyear = 2200 + birthyear;
+                    }
+                    case 8 -> {
+                        gender = "Nam";
+                        fullbirthyear = 2300 + birthyear;
+                    }
+                    case 9 -> {
+                        gender = "Nu";
+                        fullbirthyear = 2300 + birthyear;
+                    }
+                    default -> {
+                        gender = "";
+                        fullbirthyear = 0;
+                    }
+                }
+                System.out.println("Gioi tinh: " + gender + " | " + fullbirthyear);
+            }
+            if (choose2 == 3){
+                int thirdpart = cccd.remainder(BigInteger.valueOf(100000)).intValue();
+                System.out.printf("So ngau nhien: %06d\n", thirdpart);
+            }
+            } while (choose2 != 0);
         }
-
-
         scn.close();
     }
     static int inputNumber(Scanner scn){

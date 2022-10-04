@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="CCCD format setup">
+      <change afterPath="$PROJECT_DIR$/Asm01/Asm01nangcao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asm01/Asm01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm01/Asm01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Asm01">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Asm01nangcao">
     <configuration name="Asm01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Asm01" />
       <method v="2">
@@ -58,6 +65,13 @@
     </configuration>
     <configuration name="Asm01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Asm01" />
+      <module name="vn.funix.fx18891.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Asm01nangcao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Asm01nangcao" />
       <module name="vn.funix.fx18891.java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Asm01nangcao" />
         <item itemvalue="Application.Asm01" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Asm01 (1)" />
@@ -92,7 +107,8 @@
       <workItem from="1664782176389" duration="8352000" />
       <workItem from="1664799771794" duration="3206000" />
       <workItem from="1664841707218" duration="3745000" />
-      <workItem from="1664853436059" duration="5697000" />
+      <workItem from="1664853436059" duration="5819000" />
+      <workItem from="1664887625459" duration="1994000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1664721336345</created>
@@ -129,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664856193810</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CCCD format setup">
+      <created>1664859294452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664859294452</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

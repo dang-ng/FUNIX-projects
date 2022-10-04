@@ -1,7 +1,8 @@
 import java.math.BigInteger;
+import java.util.Random;
 import java.util.Scanner;
 
-public class Asm01 {
+public class Asm01nangcao {
     public static void main(String[] args) {
         System.out.println("+----------+-------------------------+----------+");
         System.out.println("| NGAN HANG SO | FX18891@v1.0.0                 |");
@@ -25,10 +26,10 @@ public class Asm01 {
 //      Nếu nhập 0 hoặc 1
         if (choose == 0) System.exit(0);
         if (choose == 1) {
-            int rnd = (int)(Math.random()*900)+100; // ra số ngẫu nhiên từ 100-999
+            String rnd = randomString("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",6); // ra số ngẫu nhiên từ 100-999
             System.out.println("Nhap ma xac thuc: " + rnd);
             // kiểm tra mã xác thực
-            while (!scn.hasNextInt() || scn.nextInt() != rnd) {
+            while (!scn.next().equals(rnd)) {
                 System.out.println("Ma xac thuc khong dung. Vui long thu lai.");
                 scn = new Scanner(System.in);
             }
@@ -138,5 +139,13 @@ public class Asm01 {
             return false;
         }
         return true;
+    }
+    public static String randomString(String str, int length){
+        StringBuilder sb = new StringBuilder();
+        Random rd = new Random();
+        for (int i=0; i< length;i++){
+            sb.append(str.charAt(rd.nextInt(str.length())));
+        }
+        return sb.toString();
     }
 }

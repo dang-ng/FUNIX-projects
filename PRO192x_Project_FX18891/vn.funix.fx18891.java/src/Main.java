@@ -1,19 +1,17 @@
-import java.util.Random;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
-        System.out.print(randomString(
-                "abcdefghijklmnopqrstuvwxyz0123456789",17
-        ));
+        Time t = new Time(12, 1, 1);
+        t.display();
+        t.setTime(23, 59, 59);
+        t.display();
+        t.nextSecond();
+        t.display();
+        t.nextSecond();
+        t.display();
+        t.setTime(7, 0, 0);
+        t.display();
+        t.previousSecond();
+        t.display();
     }
-
-    public static String randomString(String str, int length){
-        StringBuilder sb = new StringBuilder();
-        Random rnd = new Random();
-        for (int i = 0;i< length; i++){
-            sb.append(str.charAt(rnd.nextInt(str.length())));
-        }
-        return sb.toString();
-    }
-
 }

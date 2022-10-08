@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="CCCD format setup">
-      <change afterPath="$PROJECT_DIR$/Asm01/Asm01nangcao.java" afterDir="false" />
+    <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="add advance version">
+      <change afterPath="$PROJECT_DIR$/Asm02/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asm02/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asm02/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asm02/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asm01/Asm01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm01/Asm01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/vn.funix.fx18891.java/Asm01.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vn.funix.fx18891.java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vn.funix.fx18891.java.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +59,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Asm01nangcao">
-    <configuration name="Asm01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Asm01" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Asm02">
     <configuration name="Asm01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Asm01" />
       <module name="vn.funix.fx18891.java" />
@@ -77,6 +74,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Asm02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Asm02" />
+      <module name="vn.funix.fx18891.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Entry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Entry" />
+      <module name="vn.funix.fx18891.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="vn.funix.fx18891.java" />
@@ -86,10 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Asm02" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Entry" />
         <item itemvalue="Application.Asm01nangcao" />
         <item itemvalue="Application.Asm01" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Asm01 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +120,11 @@
       <workItem from="1664799771794" duration="3206000" />
       <workItem from="1664841707218" duration="3745000" />
       <workItem from="1664853436059" duration="5819000" />
-      <workItem from="1664887625459" duration="1994000" />
+      <workItem from="1664887625459" duration="2264000" />
+      <workItem from="1664929976362" duration="1202000" />
+      <workItem from="1664959263641" duration="2270000" />
+      <workItem from="1665035958297" duration="3515000" />
+      <workItem from="1665217741869" duration="7452000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1664721336345</created>
@@ -152,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664859294452</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add advance version">
+      <created>1664889732172</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664889732172</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +196,7 @@
     <MESSAGE value="1st commit" />
     <MESSAGE value="2nd commit" />
     <MESSAGE value="CCCD format setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="CCCD format setup" />
+    <MESSAGE value="add advance version" />
+    <option name="LAST_COMMIT_MESSAGE" value="add advance version" />
   </component>
 </project>

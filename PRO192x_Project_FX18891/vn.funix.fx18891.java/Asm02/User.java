@@ -1,7 +1,8 @@
+import java.math.BigInteger;
+
 public class User {
     private String name, customerId;
     public User (){
-
     }
     public String getName(){
         return this.name;
@@ -13,6 +14,10 @@ public class User {
         this.name = name;
     }
     public void setCustomerId(String customerId){
-
+        if (customerId.length()!= 12) return;
+        try {
+            BigInteger a = new BigInteger(customerId);
+        } catch (Exception e) {return;}
+        this.customerId = customerId;
     }
 }

@@ -1,17 +1,21 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 class Main {
     public static void main(String[] args) {
-        Time t = new Time(12, 1, 1);
-        t.display();
-        t.setTime(23, 59, 59);
-        t.display();
-        t.nextSecond();
-        t.display();
-        t.nextSecond();
-        t.display();
-        t.setTime(7, 0, 0);
-        t.display();
-        t.previousSecond();
-        t.display();
+        List<String> abc = new ArrayList<>();
+        abc.add("1");
+        abc.add("2");
+        abc.add("3");
+
+        ListIterator<String> a = abc.listIterator();
+
+//        for (ListIterator<String> i = abc.listIterator();i.hasNext();) System.out.print(i.next() + " ");
+
+        a.add("27");
+
+        for (ListIterator<String> i = abc.listIterator();i.hasNext();) System.out.print(i.next() + " ");
     }
 }

@@ -1,8 +1,9 @@
 public class Account {
     private String accountNumber;
     private double balance;
-    public Account (){
-
+    public Account (String accountNumber){
+        this.accountNumber = accountNumber;
+        this.balance = 0;
     }
     public double getBalance (){
         return this.balance;
@@ -17,10 +18,9 @@ public class Account {
         this.accountNumber = accountNumber;
     }
     public boolean isPremium (){
-        return this.balance >= 1000000.0;
+        return this.balance >= 10000000.0;
     }
     public String toString (){
-        System.out.println(accountNumber + balance);
-        return null;
+        return this.accountNumber + " |                  " + this.balance + "đ";
     }
 }

@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.UUID;
 
 public class Bank {
@@ -13,13 +14,30 @@ public class Bank {
         return this.id;
     }
     public void addCustomer (Customer newCustomer){
-
+        for (ListIterator<Customer> i = customers.listIterator(); i.hasNext();){
+            Customer customer = i.next();
+            if (newCustomer.getCustomerId().equals(customer.getCustomerId())) {
+                System.out.println("So CCCD da ton tai trong he thong!");
+                return;
+            }
+        }
+        customers.add(newCustomer);
+        System.out.println("Khach hang moi da duoc them vao!");
     }
-    public void addAccount (String customerId, Account acount){
-
+    public void addAccount (String customerId, String account, double balance){
+        for (ListIterator<Customer> i = customers.listIterator();i.hasNext();){
+            Customer customer = i.next();
+            if (customer.getCustomerId().equals(customerId)) {
+                customer.addAccount(account,balance);
+            }
+        }
     }
     public boolean isCustomerExisted (String customerId){
-        return true;
+        for (ListIterator<Customer> i = customers.listIterator();i.hasNext();){
+            Customer customer = i.next();
+            if (customer.getCustomerId().equals(customerId)) return true;
+        }
+        return false;
     }
     public List<Customer> getCustomers(){
         return customers;

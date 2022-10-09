@@ -26,8 +26,10 @@ public class Customer extends User {
         } catch (Exception e) {return;}
         for (ListIterator<Account> i = this.accounts.listIterator();i.hasNext();){
             Account account = i.next();
-            if(account.getAccountNumber().equals(a)) account.addBalance(b);
-            return;
+            if(account.getAccountNumber().equals(a)) {
+                account.addBalance(b);
+                return;
+            }
         }
         accounts.add(new Account(a,b));
     }

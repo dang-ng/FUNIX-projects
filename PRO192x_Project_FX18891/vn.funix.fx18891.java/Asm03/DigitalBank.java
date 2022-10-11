@@ -1,13 +1,29 @@
+import java.util.Objects;
+
 public class DigitalBank extends Bank {
+    public DigitalBank (){
+        super();
+        addCustomer(new Customer("DANG","079089018337"));
+    }
     public Customer getCustomerById (String customerId){
-        //Chỉ trả về khách hàng nếu như tồn tại CCCD trong hệ thống ngân hàng,
-        // ngược lại trả về null.
+        for (Customer customer : getCustomers()){
+            if (customer.getCustomerId().equals(customerId)) {
+                return customer;
+            }
+        }
+        return null;
     }
-    public void addCustomer (String customerId, String name){
-        //để tạo khách hàng cho ngân hàng
-    }
+
     public void withdraw (String customerId, String accountNumber, double amount){
-        // kiểm tra nếu customerId không tồn tại thì trả về ,
-        // ngược lại có tồn tại thì gọi hàm withdraw của đối tượng khách hàng tìm được.
+        for (Customer customer : getCustomers()){
+            if (Objects.equals(customer.getCustomerId(), customerId)){
+                for (Account account : customer.getAccount()){
+                    if (account.getAccountNumber().equals(accountNumber)) {
+                        if (account instanceof SavingsAccount) ((SavingsAccount) account).withdraw(amount);
+                        else ((LoansAccount) account).withdraw(amount);
+                    }
+                }
+            }
+        }
     }
 }

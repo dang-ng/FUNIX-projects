@@ -13,6 +13,8 @@ public class Bank {
     public String getId(){
         return this.id;
     }
+
+    // tao khach hang moi
     public void addCustomer (Customer newCustomer){
         for (ListIterator<Customer> i = customers.listIterator(); i.hasNext();){
             Customer customer = i.next();
@@ -32,6 +34,8 @@ public class Bank {
             }
         }
     }
+
+    // kiem tra khach hang co san chua
     public boolean isCustomerExisted (String customerId){
         for (ListIterator<Customer> i = customers.listIterator();i.hasNext();){
             Customer customer = i.next();

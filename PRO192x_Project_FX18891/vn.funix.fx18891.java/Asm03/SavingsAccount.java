@@ -4,22 +4,8 @@ public class SavingsAccount extends Account implements ReportService, Withdraw {
         public SavingsAccount (String accountNumber, double balance){
             super(accountNumber, balance);
         }
-//        public void addAccount (String customerId, Account account){
-//            for (Customer customer: customers){
-//                if (isCustomerExisted(customerId)){
-//                    customer.addAccount(account);
-//                }
-//            }
-//        }
-//        public boolean isCustomerExisted(String customerId){
-//            for (Customer customer : customers){
-//                if (customer.getCustomerId().equals(customerId)){
-//                    return true;
-//                }
-//            }
-//            return false;
-//        }
 
+        // lenh rut tien
     @Override
     public boolean withdraw (double amount){
         double newBalance;
@@ -27,11 +13,13 @@ public class SavingsAccount extends Account implements ReportService, Withdraw {
             newBalance = this.getBalance() - amount;
             setBalance(newBalance);
             System.out.println("Rut tien thanh cong!");
-            log(amount);
+            log(amount,0);
+            saveTransaction(new Transaction(amount, true));
             return true;
         }
         else {
             System.out.println("Rut tien khong thanh cong.");
+            saveTransaction(new Transaction(amount, false));
             return false;
         }
 
@@ -44,22 +32,24 @@ public class SavingsAccount extends Account implements ReportService, Withdraw {
         else return false;
     }
 
+    // tao bao cao
     @Override
-    public void log (double amount){
-        System.out.println("+--------------------------------+");
+    public void log (double amount, double fee){
+        System.out.println("+------------------------------------+");
         System.out.println("BIEN LAI GIAO DICH SAVINGS");
         System.out.printf("NGAY G/D: %28s%n", getDateTime());
         System.out.printf("ATM ID: %30s%n", "DIGITAL-BANK-ATM 2022");
         System.out.printf("SO TK: %31s%n", getAccountNumber());
-        System.out.printf("SO TIEN: %29s%n", amount);
-        System.out.printf("SO DU: %31s%n", getBalance());
-        System.out.printf("PHI + VAT: %27s%n", 0);
-        System.out.println("+--------------------------------+");
+        System.out.printf("SO TIEN: %29s%n", String.format("%,.0fđ",amount));
+        System.out.printf("SO DU: %31s%n", String.format("%,.0fđ",getBalance()));
+        System.out.printf("PHI + VAT: %26sđ%n", fee);
+        System.out.println("+------------------------------------+");
     }
 
+    // in ra ket qua tong ket
     @Override
     public String toString (){
-        return this.getAccountNumber() + "       |    SAVINGS |                    " + String.format("%,.0f",this.getBalance()) + "đ";
+        return this.getAccountNumber() + "       |     SAVINGS |" + String.format("%,22.0f",this.getBalance()) + "đ";
     }
 
 }

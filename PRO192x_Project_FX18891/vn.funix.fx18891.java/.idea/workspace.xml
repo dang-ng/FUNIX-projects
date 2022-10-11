@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="asm 2 update">
+    <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="asm 3 update">
+      <change afterPath="$PROJECT_DIR$/Asm03/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asm03/DigitalBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm03/DigitalBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asm03/DigitalCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm03/DigitalCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asm02/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm02/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asm03/LoansAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm03/LoansAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asm03/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm03/ReportService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Asm03/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm03/SavingsAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +135,8 @@
       <workItem from="1665447759256" duration="1390000" />
       <workItem from="1665456801683" duration="3797000" />
       <workItem from="1665468954444" duration="11879000" />
-      <workItem from="1665491372901" duration="3204000" />
+      <workItem from="1665491372901" duration="3306000" />
+      <workItem from="1665497318735" duration="8000000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1664721336345</created>
@@ -220,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665471432359</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="asm 3 update">
+      <created>1665494696326</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665494696326</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +253,8 @@
     <MESSAGE value="add advance version" />
     <MESSAGE value="asm 2" />
     <MESSAGE value="asm 2 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="asm 2 update" />
+    <MESSAGE value="asm 3 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="asm 3 update" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

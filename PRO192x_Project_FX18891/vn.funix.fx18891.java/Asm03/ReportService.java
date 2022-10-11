@@ -1,3 +1,3 @@
 public interface ReportService {
-    void log (double amount);
+    void log (double amount, double fee);
 }

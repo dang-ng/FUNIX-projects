@@ -1,21 +1,17 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-
 class Main {
     public static void main(String[] args) {
-        List<String> abc = new ArrayList<>();
-        abc.add("1");
-        abc.add("2");
-        abc.add("3");
-
-        ListIterator<String> a = abc.listIterator();
-
-//        for (ListIterator<String> i = abc.listIterator();i.hasNext();) System.out.print(i.next() + " ");
-
-        a.add("27");
-
-        for (ListIterator<String> i = abc.listIterator();i.hasNext();) System.out.print(i.next() + " ");
+        Interger n = new Interger();
+        System.out.println(n.add(10));
+    }
+}
+class Number {
+    private int n= 10;
+    public int add(){
+        return n;
+    }
+    }
+class Interger extends Number {
+    public int add(int n){
+        return super.add() + n;
     }
 }

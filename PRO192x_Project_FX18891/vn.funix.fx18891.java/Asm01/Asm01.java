@@ -2,9 +2,11 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Asm01 {
+    public static final String AUTHOR = "FX18891";
+    public static final String VERSION = "@v1.0.0";
     public static void main(String[] args) {
         System.out.println("+----------+-------------------------+----------+");
-        System.out.println("| NGAN HANG SO | FX18891@v1.0.0                 |");
+        System.out.printf("| NGAN HANG SO | %-7s%-24s%s%n", AUTHOR, VERSION, "|");
         System.out.println("+----------+-------------------------+----------+");
         System.out.println("| 1. Nhap CCCD                                  |");
         System.out.println("| 0. Thoat                                      |");

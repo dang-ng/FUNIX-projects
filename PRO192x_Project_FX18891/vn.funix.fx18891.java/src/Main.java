@@ -1,17 +1,17 @@
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+
 class Main {
-    public static void main(String[] args) {
-        Interger n = new Interger();
-        System.out.println(n.add(10));
+    public static void main(String[] args) throws IOException {
+        load("texts.txt");
     }
-}
-class Number {
-    private int n= 10;
-    public int add(){
-        return n;
+    public static void load (String filename) throws IOException {
+        Path file = FileSystems.getDefault().getPath("", filename);
+        List<String> lines = Files.readAllLines(file);
+        lines.forEach(System.out::println);
     }
-    }
-class Interger extends Number {
-    public int add(int n){
-        return super.add() + n;
-    }
+
 }

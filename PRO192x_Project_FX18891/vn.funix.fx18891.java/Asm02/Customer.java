@@ -27,10 +27,12 @@ public class Customer extends User {
         for (ListIterator<Account> i = this.accounts.listIterator();i.hasNext();){
             Account account = i.next();
             if(account.getAccountNumber().equals(a)) {
-                account.addBalance(b);
+//                account.addBalance(b);
+                System.out.println("So tai khoan da ton tai.");
                 return;
             }
         }
+        System.out.println("Tai khoan moi da duoc them vao!");
         accounts.add(new Account(a,b));
     }
     public double getBalance(){

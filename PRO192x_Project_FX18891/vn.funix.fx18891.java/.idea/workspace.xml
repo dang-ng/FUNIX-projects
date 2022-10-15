@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="fix minor bugs">
-      <change afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Asm01/Asm01nangcao2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asm02/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm02/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vn.funix.fx18891.java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vn.funix.fx18891.java.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +33,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2FaC52zIKFK6m8QbOk7YuprqDN7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,7 +55,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,9 +66,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Asm03">
+    <configuration name="Asm01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Asm01" />
+      <module name="vn.funix.fx18891.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Asm01nangcao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Asm01nangcao" />
+      <module name="vn.funix.fx18891.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Asm01nangcao2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Asm01nangcao2" />
       <module name="vn.funix.fx18891.java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,27 +102,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="vn.funix.fx18891.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="vn.funix.fx18891.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Asm03" />
         <item itemvalue="Application.Asm02" />
+        <item itemvalue="Application.Asm01nangcao2" />
         <item itemvalue="Application.Asm01nangcao" />
+        <item itemvalue="Application.Asm01" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +147,9 @@
       <workItem from="1665755907045" duration="1704000" />
       <workItem from="1665802943447" duration="3395000" />
       <workItem from="1665812307966" duration="621000" />
-      <workItem from="1665820860440" duration="1725000" />
+      <workItem from="1665820860440" duration="3097000" />
+      <workItem from="1665830023728" duration="3290000" />
+      <workItem from="1665833366649" duration="4377000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1664721336345</created>
@@ -251,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665545770586</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix minor bugs">
+      <created>1665822756027</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665822756027</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

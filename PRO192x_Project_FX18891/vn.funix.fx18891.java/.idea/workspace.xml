@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06e7e878-4c74-404a-9423-b1ce8ed639c6" name="Changes" comment="fix minor bugs">
-      <change afterPath="$PROJECT_DIR$/Asm01/Asm01nangcao2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asm02/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asm02/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vn.funix.fx18891.java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vn.funix.fx18891.java.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +146,7 @@
       <workItem from="1665812307966" duration="621000" />
       <workItem from="1665820860440" duration="3097000" />
       <workItem from="1665830023728" duration="3290000" />
-      <workItem from="1665833366649" duration="4377000" />
+      <workItem from="1665833366649" duration="5189000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1664721336345</created>
@@ -263,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665822756027</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix minor bugs">
+      <created>1665838058227</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665838058227</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

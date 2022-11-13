@@ -10,4 +10,3 @@ where
     or
     a.counts not in (select counts from a where hacker_id <> h.hacker_id)
 order by a.counts desc, h.hacker_id
-    

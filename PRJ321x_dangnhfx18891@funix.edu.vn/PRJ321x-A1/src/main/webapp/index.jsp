@@ -5,6 +5,6 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<% request.getRequestDispatcher("/home.jsp").forward(request, response);%>
+<% request.getRequestDispatcher("/login").forward(request, response);%>
 </body>
 </html>

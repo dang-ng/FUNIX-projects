@@ -4,9 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Login page</title>
 </head>
 <body>
-
+<div class="container">
+    <form action="">
+        Username <input type="text" name="username" placeholder="Enter Username">
+        Password <input type="text" name="password" placeholder="Enter Password">
+        <input type="submit" value="Login">
+    </form>
+</div>
 </body>
 </html>

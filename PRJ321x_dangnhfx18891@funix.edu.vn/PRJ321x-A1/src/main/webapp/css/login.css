@@ -2,3 +2,47 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    border: 3px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-form form {
+
+}
+
+.middle-form form * {
+    display: block;
+    width: 100%;
+}
+
+.remember {
+    display: inline !important;
+    width: 25px !important;
+}
+
+.login-btn {
+    color: white;
+    background: green;
+}
+
+.bottom-div {
+    background: lightgray;
+    width: 100%;
+    height: 50px;
+}
+
+.cancel-btn {
+    color: white;
+    background: red;
+    float: left;
+    margin: 15px;
+}
+
+.forgot {
+    float: right;
+    margin: 15px;
+}

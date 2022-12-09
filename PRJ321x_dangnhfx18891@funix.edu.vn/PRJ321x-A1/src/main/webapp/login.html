@@ -1,17 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/login.css">
-<title>Login page</title>
+    <title>Login page</title>
 </head>
 <body>
 <div class="container">
-    <img class="top-div" src="${pageContext.request.contextPath}/img/portrait.png" alt="portrait">
+    <img src="./img/portrait.png" alt="portrait">
     <div class="middle-form">
-        <form action="${pageContext.request.contextPath}/login">
+        <form action="/login">
             <label>
                 Username <input type="text" name="username" placeholder="Enter Username">
             </label>
@@ -19,14 +17,14 @@
                 Password <input type="text" name="password" placeholder="Enter Password">
             </label>
             <input class="login-btn" type="submit" value="Login">
-            <label>
-                <input type="checkbox" name="remember"> Remember me
+            <label class="remember">
+                <input class="remember" type="checkbox" name="remember">Remember me
             </label>
         </form>
     </div>
     <div class="bottom-div">
         <input class="cancel-btn" type="submit" value="cancel">
-        <div>Forgot <a href="#">password?</a></div>
+        <div class="forgot">Forgot <a href="#">password?</a></div>
     </div>
 </div>
 </body>
